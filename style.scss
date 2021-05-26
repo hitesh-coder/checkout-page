@@ -1,0 +1,351 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 15vh 15vw;
+
+    h1 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        /* identical to box height */
+
+        color: #4e5150;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        position: relative;
+    }
+}
+
+.item-list {
+    flex: 0.8;
+    width: 100%;
+    height: 535px;
+    background: #f2f2f2;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .item {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem 0;
+        justify-content: space-around;
+
+        img {
+            width: 130px;
+            height: 135px;
+            border-radius: 1rem;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 135px;
+
+            .detail {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // align-items: center;
+                h2 {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+
+                    color: #4e5150;
+                }
+
+                .rate {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 0.5rem 0;
+                    h3 {
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 20px;
+
+                        /* Orange */
+
+                        color: #f2994a;
+                    }
+
+                    h4 {
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 15px;
+                        text-decoration-line: line-through;
+
+                        color: #4e5150;
+                    }
+                }
+            }
+
+            .qty {
+                display: flex;
+                flex-direction: row;
+                padding: auto 0.5rem;
+                border-radius: 1rem;
+                border: 1px solid #828282;
+                justify-content: space-around;
+                width: 130px;
+                height: 50px;
+                align-items: center;
+
+                span {
+                    height: 22px;
+                    width: 22px;
+                    background: #e0e0e0;
+                    border-radius: 4px;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                h5 {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+
+                    /* Gray 1 */
+
+                    color: #333333;
+                }
+            }
+        }
+    }
+
+    .shipping-charges,
+    .total {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+
+            /* Gray 1 */
+
+            color: #333333;
+        }
+
+        span {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+
+            /* Gray 1 */
+
+            color: #333333;
+        }
+    }
+}
+
+form {
+    flex: 1;
+}
+
+.contact,
+.ship-address {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+
+    h2 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 1rem 0;
+        /* identical to box height */
+
+        /* Gray 1 */
+
+        color: #333333;
+    }
+
+    .agreement {
+        label {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            /* identical to box height */
+
+            /* Gray 2 */
+
+            color: #4f4f4f;
+        }
+    }
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 1rem;
+    border: 1px solid #828282;
+    border-radius: 12px;
+    position: relative;
+
+    label {
+        position: absolute;
+        width: 79.7%;
+        height: 48px;
+        z-index: 10;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 2px;
+        border-radius: 12px;
+        pointer-events: none;
+
+        .icon {
+            width: 10%;
+            margin-left: 5px;
+            color: #828282;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    input {
+        position: absolute;
+        width: 100%;
+        height: 48px;
+        border: none;
+        border-radius: 12px;
+        padding-left: 10%;
+        outline: none;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+}
+
+.last-opt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .country {
+        flex: 1;
+        margin-right: 1rem;
+
+        select {
+            position: absolute;
+            width: 100%;
+            height: 48px;
+            border: none;
+            border-radius: 12px;
+            padding-left: 15%;
+            outline: none;
+        }
+    }
+
+    .postal-code {
+        flex: 1;
+
+        input {
+            padding-left: 20%;
+        }
+    }
+}
+
+button {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    background: #f2994a;
+    padding: 1rem;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    color: #ffffff;
+}
+
+footer {
+    height: 5vh;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 100px;
+
+    text-align: center;
+
+    color: #bdbdbd;
+
+    a {
+        font-weight: 700;
+        color: #a1a1a1;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        padding: 10vh 5vw;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    main {
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .contact,
+    .ship-address {
+        width: 100%;
+    }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevChallenges.io</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="devchallenges.png" type="image/png">
+  <script src="https://kit.fontawesome.com/2a01523bfd.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <h1>Checkout</h1>
+    <div class="content">
+      <div class="item-list">
+        <div>
+          <div class="item">
+            <img src="photo1.png" alt="">
+            <div class="info">
+              <div class="detail">
+                <h2>Vintage Backbag</h2>
+                <div class="rate">
+                  <h3 class="new-rate">$<span id="new-rate1">54.99</span></h3>
+                  <h4 class="old-rate">$94.99</h4>
+                </div>
+              </div>
+              <div class="qty">
+                <span id="minus1" style="cursor: pointer;">
+                  <div>-</div>
+                </span>
+                <h5 id="qty1">1</h5>
+                <span id="plus1" style="cursor: pointer;">
+                  <div>+</div>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="photo2.png" alt="">
+            <div class="info">
+              <div class="detail">
+                <h2>Levi Shoes</h2>
+                <div class="rate">
+                  <h3 class="new-rate">$<span id="new-rate2">74.99</span></h3>
+                  <h4 class="old-rate">$124.99</h4>
+                </div>
+              </div>
+              <div class="qty">
+                <span id="minus2" style="cursor: pointer;">
+                  <div>-</div>
+                </span>
+                <h5 id="qty2">1</h5>
+                <span id="plus2" style="cursor: pointer;">
+                  <div>+</div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="shipping-charges">
+          <p>Shipping</p>
+          <span>$19</span>
+        </div>
+        <hr>
+        <div class="total">
+          <p>Total</p>
+          <span>$<span id="total-no">148.98</span>
+        </div>
+      </div>
+      <form action="" method="GET">
+        <div class="contact">
+          <h2>Contact infomation</h2>
+          <div class="email data">
+            <label for="email">
+              <div class="icon">
+                <i class="fas fa-envelope closed"></i>
+              </div>
+            </label>
+            <input type="email" id="email" placeholder="Enter your email..." required>
+          </div>
+          <div class="phone data">
+            <label for="phone">
+              <div class="icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+            </label>
+            <input type="number" id="phone" placeholder="Enter your phone..." maxlength="10" required>
+          </div>
+        </div>
+        <div class="ship-address">
+          <h2>Shipping address</h2>
+          <div class="name data">
+            <label for="name">
+              <div class="icon">
+                <i class="fas fa-user-circle"></i>
+              </div>
+            </label>
+            <input type="text" id="name" placeholder="Full Name..." required>
+          </div>
+          <div class="address data">
+            <label for="address">
+              <div class="icon">
+                <i class="fas fa-home"></i>
+              </div>
+            </label>
+            <input type="text" id="address" placeholder="Your address..." required>
+          </div>
+          <div class="city data">
+            <label for="city">
+              <div class="icon">
+                <i class="fas fa-city"></i>
+              </div>
+            </label>
+            <input type="text" id="city" placeholder="Your city..." required>
+          </div>
+          <div class="last-opt">
+            <div class="country data">
+              <label for="country">
+                <div class="icon">
+                  <i class="fas fa-globe-africa"></i>
+                </div>
+              </label>
+              <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="Japan">Japan</option>
+                <option value="China">China</option>
+                <option value="Russia">Russia</option>
+              </select>
+            </div>
+            <div class="postal-code data">
+              <label for="postal-code">
+                <div class="icon">
+                  <i class="fas fa-address-card"></i>
+                </div>
+              </label>
+              <input type="number" id="postal-code" placeholder="Your postal code..." required>
+            </div>
+          </div>
+          <div class="agreement">
+            <input type="checkbox" name="agreement" id="agreement">
+            <label for="agreement">Save this information for next time</label>
+          </div>
+        </div>
+        <button>Continue</button>
+      </form>
+    </div>
+  </main>
+  <footer>Created by
+    <a href="https://github.com/hitesh-coder">HITESH</a> - devChallenges.io
+  </footer>
+</body>
+
+
+<script src="main.js"></script>
+
+</html>
